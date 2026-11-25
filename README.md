@@ -41,26 +41,6 @@ AUCA_ID/
 
 - JDK 11 or newer (developed with JDK 21)
 
-## Compile and run
-
-From the project folder:
-
-```bash
-mkdir out
-javac -d out $(find src -name "*.java")
-java -cp out com.auca.main.Main
-```
-
-Windows (Command Prompt):
-
-```bat
-mkdir out
-javac -d out src\com\auca\*\*.java
-java -cp out com.auca.main.Main
-```
-
-In IntelliJ / Eclipse / NetBeans: open the folder, mark `src` as the sources root and run `com.auca.main.Main`.
-
 ## Main menu
 
 | # | Option | # | Option |
