@@ -103,10 +103,4 @@ Every entity uses a four-step form: identification, details, validation/calculat
 - Balance = assessment total + penalties - payments.
 - Payments require a CONFIRMED assessment and cannot exceed the balance.
 - Refunds need a verified overpayment and an active officer whose approval limit covers the amount.
-- Clearance needs an active taxpayer with no unresolved declarations or overdue unpaid obligations.
-
-## Author
-
-Name: _your name_  
-Student ID: _your AUCA ID_  
-Course: Object-Oriented Programming (Java), AUCA
+- Clearance needs an active taxpayer with no unresolved declarations or overdue unpaid obligations 
