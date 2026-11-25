@@ -1,4 +1,4 @@
-# Tax Administration Management System (TAMS)
+# Tax Administration Management System 
 
 A console-based Java OOP project for the AUCA practical assignment. It registers taxpayers, manages tax types and obligations, receives declarations, creates assessments, records payments, calculates penalties, processes refunds and issues tax-clearance decisions.
 
