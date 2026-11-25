@@ -55,30 +55,3 @@ AUCA_ID/
 | 10 | View Declaration History | 21 | Demonstrate Polymorphism |
 | 11 | View Assessment History | 0 | Exit |
 
-## How the forms work
-
-Every entity uses a four-step form: identification, details, validation/calculation, then review and save.
-
-- Type `BACK` to return to the previous step and `CANCEL` to discard everything.
-- At review, choose **SAVE**, **EDIT FIELD** (by field number) or **CANCEL**.
-- Records are stored only when you press SAVE, so a cancelled form changes nothing.
-- If a related record is missing (for example an unknown tax type), you can register it on the spot and the form resumes with your values.
-
-## Suggested demo flow
-
-1. Register an individual taxpayer with a bad TIN (e.g. `12345`), then correct it to 9 digits.
-2. Register a corporate taxpayer with the same TIN and watch it be rejected.
-3. Register an officer, a tax type, an obligation, then file a declaration (try a wrong declared tax first).
-4. Record a late-filing penalty, assess, confirm, then make two partial payments.
-5. Try a duplicate payment reference and an amount above the balance.
-6. Use option 17 to amend the assessment adjustment to create an overpayment, then request and approve a refund.
-7. Request and issue a tax clearance, then check options 18-21.
-
-## Business rules (all fictional)
-
-- Expected tax = taxable amount x rate / 100, rounded HALF_UP to 2 decimals.
-- Late-filing penalty = base amount x penalty rate / 100 (illustrative 5%).
-- Balance = assessment total + penalties - payments.
-- Payments require a CONFIRMED assessment and cannot exceed the balance.
-- Refunds need a verified overpayment and an active officer whose approval limit covers the amount.
-- Clearance needs an active taxpayer with no unresolved declarations or overdue unpaid obligations 
